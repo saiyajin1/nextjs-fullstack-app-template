@@ -9,7 +9,7 @@ export interface ICatCard {
     time: string;
 }
 
-const myLoader = ({ src }) => {
+const myLoader = ({ src }: any) => {
     return src;
 }
 
@@ -25,6 +25,7 @@ const CatCard: React.FC<ICatCard> = ({ tag, title, body, author, time }) => {
                         className={styles.card__image}
                         width="600"
                         height="400"
+                        unoptimized
                     />
                 </div>
                 <div className={styles.card__body}>
@@ -41,6 +42,7 @@ const CatCard: React.FC<ICatCard> = ({ tag, title, body, author, time }) => {
                             className={styles.user__image}
                             width="40"
                             height="40"
+                            unoptimized
                         />
                         <div className={styles.user__info}>
                             <h5>{author}</h5>
