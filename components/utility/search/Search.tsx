@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-export interface ISearch {
-
-}
+export interface ISearch { }
 
 const Search: React.FC<ISearch> = () => {
     const [searchTerm, setSearchTerm] = useState<string>();
