@@ -1,8 +1,6 @@
 import { IFooter } from './Footer';
 
-const base: IFooter = {
-  sampleTextProp: 'Hello world!',
-};
+const base: IFooter = {};
 
 export const mockFooterProps = {
   base,
